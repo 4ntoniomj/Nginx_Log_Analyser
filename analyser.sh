@@ -6,7 +6,7 @@ endColour="\e[0m"
 
 # FILE
 if [ -z $1 ]; then
-	file=$(find . -type f -name *.log)
+	file=$(find . -type f -name *.log | head -n 1)
 else
 	file="$1"
 fi
